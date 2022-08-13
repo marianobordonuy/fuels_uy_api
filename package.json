@@ -1,0 +1,16 @@
+{
+  "name": "fuels_uy_api",
+  "version": "1.0.0",
+  "description": "API to provide fuel prices in Uruguay",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "author": "ICanRead",
+  "license": "ISC",
+  "dependencies": {
+    "dotenv": "^16.0.1",
+    "express": "^4.18.1",
+    "mongoose": "^6.5.2"
+  }
+}
