@@ -4,6 +4,7 @@ const mongoose = require("mongoose");
 const fuelSchema = require("./models/fuel");
 const apiResponse = require("./helpers/apiResponse");
 require('dotenv').config();
+const uri = process.env.MONGODB_URI;
 
 const app = express();
 
@@ -12,7 +13,7 @@ app.use(express.json());
 
 try {
     mongoose.connect(
-        "mongodb+srv://" + process.env.DB_USERNAME + ":" + process.env.SECRET_KEY + "@" + process.env.DB_NAME + ".bekvjvw.mongodb.net/" + process.env.DB_COLLECTION +"?retryWrites=true&w=majority",
+        uri,
         {
             useNewUrlParser: true,
             useUnifiedTopology: true,
