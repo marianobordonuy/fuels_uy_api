@@ -10,7 +10,7 @@ This app is an API made in Node, ussing Express and MongoDBAtlas to provide data
 
 You can review the following link: https://fuels-uy-api.herokuapp.com/
 
-There are 4 different fuel types [fuelType]: super95, super97, gasoil110, and gasoil50.
+There are 4 different fuel types [fuelType]: super95, super97, gasoil10s, and gasoil50s.
 
 In order to get access to the latest available price you will need to run a GET request adding /api/get/[fuelType]
 
