@@ -1,9 +1,9 @@
 const PORT = process.env.PORT || 3000;
 const express = require("express");
 const mongoose = require("mongoose");
+const http = require("http");
 const fuelSchema = require("./models/fuel");
 const apiResponse = require("./helpers/apiResponse");
-require('dotenv').config();
 const uri = process.env.MONGODB_URI;
 
 const app = express();
@@ -77,6 +77,10 @@ app.all("*", function(req, res) {
     console.log(Date() + " Request made resulted in page not found");
     return apiResponse.notFoundResponse(res, "Page not found")
 });
+
+setInterval(function() {
+    http.get("http://fuels-uy-api.herokuapp.com/run/");
+}, 500000); // every 5 minutes (300000)
 
 module.exports = app;
 
