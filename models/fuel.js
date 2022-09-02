@@ -22,7 +22,7 @@ const fuelSchema = new mongoose.Schema({
         required: true,
     },
     since: {
-        type: String,
+        type: Date,
         required: true,
     }
 });
