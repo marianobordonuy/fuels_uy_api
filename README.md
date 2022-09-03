@@ -2,7 +2,7 @@
 
 This is an API to retrieve current fuel prices in Uruguay.
 
-## How do I access the information.
+## How do I access the information?
 
 There are 7 different fuel types: 
 - Super 95 30S 
@@ -19,23 +19,30 @@ You will get a JSON message containing the information requested, each message c
 
 ## Response
 
-Te folowing structire is show on the response:
+The following structure is shown in the response:
 
 source:"URSEA"
 *Source of current fuel prices*
+
 fuel_type:"Premium 97 30S"
 *Fuel Type*
+
 pep:70.01
 *PEP = Precio Ex Planta de Ancap*
+
 pmit:71.55
 *PMIT = Precio Máximo Intermedio Transitorio*
+
 pvp:79.85
 *PVP = Precio máximo de Venta al Público*
 *This is the final price on the market*
+
 currency:"UYU"
 *Currency on the response*
+
 request:"premium97"
 *Internal code for mapping*
+
 since:"2022-09-01T03:00:00.000Z"
 *Since when the price is available*
 
