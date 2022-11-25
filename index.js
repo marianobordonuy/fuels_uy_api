@@ -30,13 +30,13 @@ try {
 
 // GET Intro
 app.get('/', (req, res) => {
-    return apiResponse.successResponse(res,'Welcome to Uruguay Fuels API! A good place to get the current price for fuels in Uruguay. ' +
-        'Current version: 0.1.1. ' +
-        'Current prices of fuels in Uruguay. ' +
-        'You can also get historical prices for fuels in Uruguay. ' +
+    return apiResponse.successResponse(res,'Welcome to Uruguay Fuels API! A great source to get the current price for fuels in Uruguay. ' +
+        'Current version: 0.1.1 ' +
+        'Current fuels prices in Uruguay. ' +
+        'We are working to provide historical fuel prices in Uruguay. ' +
         'Fuel rates are determined by the government and all companies have the same rates. ' +
-        'We have improved ping times, please let us know if you run into issues using this API.' +
-        'Contact us at hello.world@icanread.uy')
+        '0.1.1 - We have improved ping times, please let us know if you run into issues using this API.' +
+        'Contact us at mariano@bordon.uy')
 });
 
 //POST request to save fuel prices to database
