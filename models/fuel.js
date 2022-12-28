@@ -9,8 +9,16 @@ const fuelSchema = new mongoose.Schema({
         type: String,
         required: true,
     },
-    price: {
-        type: String,
+    pep: {
+        type: Number,
+        required: false,
+    },
+    pmit: {
+        type: Number,
+        required: false,
+    },
+    pvp: {
+        type: Number,
         required: true,
     },
     currency: {
@@ -26,6 +34,10 @@ const fuelSchema = new mongoose.Schema({
         required: true,
     }
 });
+
+//PEP = Precio Ex Planta de Ancap
+//PMIT = Precio Máximo Intermedio Transitorio
+//PVP = Precio máximo de Venta al Público
 
 const Fuel = mongoose.model("Fuel", fuelSchema);
 
