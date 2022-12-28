@@ -30,13 +30,13 @@ try {
 
 // GET Intro
 app.get('/', (req, res) => {
-    return apiResponse.successResponse(res,'Welcome to Uruguay Fuels API! A great source to get the current price for fuels in Uruguay. ' +
-        'Current version: 0.1.1 ' +
+    return apiResponse.successResponse(res,'Welcome to Uruguay Fuels API! A good place to get the current price for fuels in Uruguay. ' +
+        'Current version: 0.1.1. ' +
         'Current fuels prices in Uruguay. ' +
-        'We are working to provide historical fuel prices in Uruguay. ' +
+        'We are working to provide historical data, so you can also get historical rates for fuels in Uruguay. ' +
         'Fuel rates are determined by the government and all companies have the same rates. ' +
-        '0.1.1 - We have improved ping times, please let us know if you run into issues using this API.' +
-        'Contact us at mariano@bordon.uy')
+        'We have improved ping times, please let us know if you run into issues using this API.' +
+        'Contact me: marian@bordon.uy')
 });
 
 //POST request to save fuel prices to database
@@ -79,8 +79,8 @@ app.all("*", function(req, res) {
 });
 
 setInterval(function() {
-    http.get("http://fuels-uy-api.herokuapp.com/run/");
-}, 500000); // every 5 minutes (300000)
+    http.get("http://localhost:3000/run/");
+}, 300000); // every 5 minutes (300000)
 
 module.exports = app;
 
