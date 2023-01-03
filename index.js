@@ -1,4 +1,4 @@
-const PORT = process.env.PORT || 3000;
+const PORT = process.env.PORT || 10000;
 const express = require("express");
 const mongoose = require("mongoose");
 const http = require("http");
@@ -80,7 +80,7 @@ app.all("*", function(req, res) {
 });
 
 setInterval(function() {
-    http.get("http://localhost:3000/run/");
+    http.get("http://localhost:10000/run/");
 }, 300000); // every 5 minutes (300000)
 
 module.exports = app;
