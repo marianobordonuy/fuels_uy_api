@@ -12,6 +12,7 @@ app.use(express.urlencoded({extended: true}));
 app.use(express.json());
 
 try {
+    mongoose.set('strictQuery', false);
     mongoose.connect(
         uri,
         {
