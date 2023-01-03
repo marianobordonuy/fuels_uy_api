@@ -5,13 +5,13 @@ This is an API to retrieve current fuel prices in Uruguay.
 ## How do I access the information?
 
 There are 7 different fuel types: 
-- Super 95 30S 
-- Premium 97 30S
-- Gas Oil 10S
-- Gas Oil 50S
-- Jet A1
-- AvGas 110/130
-- Queroseno
+- Super 95 30S [super95]
+- Premium 97 30S [premium97]
+- Gas Oil 10S [gasoil10s]
+- Gas Oil 50S [gasoil50s]
+- Jet A1 [jeta1]
+- AvGas 110/130 [avgas110]
+- Queroseno [queroseno]
 
 In order to get access to the latest available price you will need to run a GET request adding /api/get/[fuelType]
 
